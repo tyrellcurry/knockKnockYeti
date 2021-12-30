@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    background-color: rgb(234, 250, 255);
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+header {
+    padding-top: 1.5%;
+    text-align: center;
+    font-size: 6vw;
+    padding-bottom: 1.5%;
+}
+
+img {
+    width: 95%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgba(191, 92, 31);
+}
+
+.doors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.door-frame {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.door-row {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.status-row {
+    margin: auto;
+    width: 120px;
+    height: 43px;
+
+}
+
+.container {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 25px;
+}
+
+.container .col:first-child {
+    text-align: right;
+    padding-right: 20px;
+}
+.container .col:nth-child(2) {
+    text-align: left;
+    padding-left: 20px;
+}
+
+h1 { 
+    display: inline;
+ }
+
+header h1 { 
+    color: rgb(128, 54, 12)
+ }
+ header span {
+    color: rgb(1, 128, 163);
+ }
+ .bg-modal,  .bg-modal-game {
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     position: absolute;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .bg-modal {
+    display: none;
+ }
+ .bg-modal-game {
+     display: none;
+ }
+
+ .modal-contents,  .modal-contents-game {
+     width: 500px;
+     height: 320px;
+     background-color: rgb(206, 244, 255);
+     border-radius: 4px;
+     padding: 20px;
+     position: relative;
+     margin-top: -15%;
+ }
+
+ .modal-contents-game {
+     width: 350px;
+     height: 200px;
+ }
+
+ .instructions-modal, .play-modal-game {
+     width: 80%;
+     display: block;
+     margin: 0 auto;
+ }
+
+ .instructions-modal h3, .play-modal-game h3 {
+     padding-top: 25px;
+ }
+
+ .instructions-modal h2 {
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .close, .close-game {
+     position: absolute;
+     top: 0;
+     right: 14px;
+     font-size: 42px;
+     transform: rotate(45deg);
+     cursor: pointer;
+ }
+
+.btn-i {
+     display: flex;
+     justify-content: center;
+     padding-top: 2em;
+ }
+
+.btn-s {
+     display: flex;
+     justify-content: center;
+     padding-top: 20%;
+ }
+
+ #status {
+     font-size: 20px;
+     width: 100%;
+     text-align: center;
+     padding-top: 10%;
+ }
+
+.btn-primary {
+    background-color: rgba(191, 92, 31);
+    border: none;
+} 
+
+.btn-primary:hover {
+    background-color: rgba(255, 150, 69);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(191, 92, 31);
+  }
+
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+  @media screen and (max-width: 900px) {
+    .doors {
+        width: 90%;
+    }
+    header {
+        font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #status {
+        padding-top: 0;
+    }
+
+    .doors {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .modal-contents,  .modal-contents-game {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .modal-contents, .modal-contents-game {
+        margin-top: -75%;
+    }
+    .modal-contents {
+        width: 80%;
+        font-size: 3.35vw;
+    }
+    .container {
+        font-size: 5vw;
+    }
+    .footer {
+        padding-top: 5%;
+    }
+}
