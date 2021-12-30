@@ -224,15 +224,18 @@ header h1 {
 }
 
 @media screen and (max-width: 500px) {
-    /* .modal-contents, .modal-contents-game {
-        margin-top: -75%;
-    } */
+    header {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    
     .modal-contents {
         width: 80%;
         font-size: 3.35vw;
     }
     .container {
         font-size: 5vw;
+        padding-bottom: 0;
     }
     .footer {
         padding-top: 5%;
