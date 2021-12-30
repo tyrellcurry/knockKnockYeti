@@ -21,7 +21,7 @@ time, mark, audio, video {
     background:transparent;
 }
 body {
-    background-color: rgb(234, 250, 255);
+    background-color: rgb(199, 242, 255);
     font-family: Poppins;
     font-weight: 400;
 }
@@ -228,13 +228,12 @@ header h1 {
         padding-top: 10%;
         padding-bottom: 5%;
     }
-    
     .modal-contents {
         width: 80%;
         font-size: 3.35vw;
     }
     .container {
-        font-size: 5vw;
+        font-size: 4vw;
         padding-bottom: 0;
     }
     .footer {
