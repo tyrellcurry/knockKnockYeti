@@ -3,8 +3,8 @@ const doorImage2 = document.getElementById('door2');
 const doorImage3 = document.getElementById('door3');
 const natureDoor = './images/door-one.png';
 const skiingDoor = './images/door-two.png';
-const yetiDoorPath = 'https://tyrellcurry.github.io/knockKnockYeti/images/yeti-door.png';
-const closedDoorPath = 'https://tyrellcurry.github.io/knockKnockYeti/images/closed-door2.png';
+const yetiDoorPath = './images/yeti-door.png';
+const closedDoorPath = './images/closed-door2.png';
 const startButton = document.getElementById('start');
 const statusText = document.getElementById('status');
 const counterText = document.getElementById('counter');
@@ -42,14 +42,14 @@ const randomDoorGenerator = () => {
 }
 
 const isYeti = door => {
-    if(door.src === yetiDoorPath) {
+    if(door.src.match('yeti') == 'yeti') {
         return true;
     }
     return false;
 }
 
 const isClicked = door => {
-    if (door.src === closedDoorPath) {
+    if (door.src.match('closed') == 'closed') {
         return false;
     }
     return true;
