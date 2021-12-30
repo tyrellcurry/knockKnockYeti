@@ -160,16 +160,19 @@ header h1 {
  }
 
 .btn-s {
-     display: flex;
+    display: flex;
      justify-content: center;
-     padding-top: 20%;
  }
 
  #status {
      font-size: 20px;
      width: 100%;
      text-align: center;
-     padding-top: 10%;
+     
+ }
+
+.none {
+    display: none;
  }
 
 .btn-primary {
@@ -191,7 +194,6 @@ header h1 {
     text-align: center;
     padding-top: 20px;
 }
-
 
   @media screen and (max-width: 900px) {
     .doors {

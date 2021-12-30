@@ -130,6 +130,7 @@ function startRound() {
     counterText.innerHTML = `${counter}`;
     highScore.innerHTML = `${score}`;
     closeModal();
+    closePlayModal()
 };
 
 startRound();
@@ -144,8 +145,13 @@ document.getElementById('close').onclick = () => {
 
 
 function playModal() {
-        document.querySelector('.bg-modal-game').style.display = 'flex';
+        document.querySelector('.none').style.display = 'block';
     }
+
+function closePlayModal() {
+        document.querySelector('.none').style.display = 'none';
+    }
+
 
 function closeModal() {
         document.querySelector('.bg-modal-game').style.display = 'none';
